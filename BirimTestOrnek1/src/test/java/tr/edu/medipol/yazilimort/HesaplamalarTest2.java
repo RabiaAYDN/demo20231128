@@ -7,32 +7,33 @@ import org.junit.Test;
 public class HesaplamalarTest2 {
 
 	@Test
-	public void TestFaktoriyelRec() {
+	public void faktoriyelRec5Sonucu120Olmali() {
 		int sonuc = Hesaplamalar.faktoriyelRec(5);
 		assertEquals(120,sonuc);
 	}
 
 	@Test
-	public void TestFaktoriyelLoop() {
+	public void testFaktoriyelLoop() {
 		int sonuc = Hesaplamalar.faktoriyelLoop(5);
 		assertEquals(120,sonuc);
 	}
 
 	@Test
-	public void testTopla() {
+	public void testFaktoriyel() {
 		
-	 int return (4,6);
+	for(int i=1; i<1000; i++) {	
+		int sonuc1 = Hesaplamalar.faktoriyelLoop(i);
+		int sonuc2 = Hesaplamalar.faktoriyelRec(i);
+		assertEquals(sonuc1, sonuc2);}
+		
+	 
 		
 	}
 
 	@Test
-	public void testCikart() {
-		int return (17,9);
+	public void testTopla2ve2() {
+		assertEquals(4, Hesaplamalar.topla(2,2));
 	}
 
-	@Test
-	public void testCarpma() {
-		int return (9,6);
-	}
 
 }
